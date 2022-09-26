@@ -1,0 +1,330 @@
+
+  <html>
+    <head>
+      <title></title>
+      <style type="text/css">
+        p{
+            margin:0;
+        }
+        @media screen and (max-width:600px) {
+             .block { display: block !important; width: 100% !important; height:auto!important }
+             .no-padding-left{padding-left:0!important}
+             .small-padding-left{padding-left:10px!important}
+             .align-center-mobile{text-align:center!important}
+             .no-padding-left-right{padding-left:0!important; padding-right:0!important}
+             .small-padding-top{padding-top:10px!important}
+             .small-padding-left-right{padding-left:10px!important; padding-right:10px!important}
+             .padding-left-text{padding-left:15px!important; padding-right:15px!important}
+             .padding-bottom{ padding-bottom:20px!important;}
+                 
+        }
+     </style>
+      
+    </head>
+    <body>
+      <table style="width:100%" width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td align="center">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:700px;border:0;border-spacing:0;" width="700" class="block">
+                 <tr>
+                    <td class="small-padding-left" style="background-color:#141A36; padding-left:40px;padding-top:55px; padding-bottom:45px;">
+                        <img src="https://www.datocms-assets.com/62362/1659456072-logo-mail-trans.png" style="max-width:100%"/>
+                    </td>
+                  </tr>
+                  
+                </table>
+                <div class="spacer" style="line-height:24px;height:24px;mso-line-height-rule:exactly;">&nbsp;</div>
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:700px;border:0;border-spacing:0;" width="700" class="block">
+                  <tr>
+                    <td style="padding0;font-family:Roboto,Arial,sans-serif;font-size:28px;line-height:32px; text-align:center; font-weight:400">
+                      <p style="padding:0; margin:0; font-family:Roboto,Arial,sans-serif; color:#121938; font-weight:400; text-align:center;font-size:28px;line-height:32px">{{newsletter_pretitle}}
+</p>
+     
+                    </td>
+                  </tr>
+                </table>
+                
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:700px;border:0;border-spacing:0;" width="700" class="block">
+                    <tr>
+                        <td> <table width="100%"><tr><td height="4px" width="100%" style="background-color:#709DC9; line-height:4px;mso-line-height-rule: exactly; font-size:4px;">&nbsp</td></tr></table>
+                        <td style="width: 1%;white-space: nowrap;">
+                        <p style="font-family:Roboto,Arial,sans-serif;font-size:28px;line-height:32px; padding:0; margin:0; font-weight:700; font-family:Roboto,Arial,sans-serif; color:#121938;padding-left:15px; padding-right:15px ">{{newsletter_title}}</p></td>
+                       <td> <table width="100%"><tr><td height="4px" width="100%" style="background-color:#709DC9; line-height:4px;mso-line-height-rule: exactly; font-size:4px;">&nbsp</td></tr></table></td>
+                    </tr>
+                </table>
+                <div class="spacer" style="line-height:24px;height:24px;mso-line-height-rule:exactly;">&nbsp;</div>
+            
+                {{#if highlight }}
+                
+                <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:650px;" class="block" width="650">
+                    <tr>
+                        
+                         <td class="block no-padding-left" align="left" valign="top" style="padding-top:10px; padding-left:0px; padding-right:15px" width="50%">
+                              <p style="font-family:Roboto,Arial,sans-serif;font-size:32px;line-height:36px; font-weight:700; margin-bottom:10px; color:#121938; margin-top:0">
+                                {{highlight.title}}
+                              </p>
+                              <p style="margin:0;font-family:Roboto,Arial,sans-serif;font-size:16px;line-height:25px;">
+                                {{highlight.body}}
+                              </p>
+                              
+                              {{#if highlight.link }}
+                                  <p style="margin:0;font-family:Roboto,Arial,sans-serif; margin-top:15px"><a href="{{highlight.link.url}}" style="background: #121937; text-decoration: none; padding: 13px 25px; color: #ffffff; display:inline-block; mso-padding-alt:0;text-underline-color:#ffffff"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:20pt">&nbsp;</i><![endif]--><span style="mso-text-raise:10pt;font-weight:bold; font-size:14px">{{highlight.link.text}}</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a></p>
+                            {{/if}}
+                            
+                       </td>
+                        <td class="block" align="left" valign="top" style="padding-top:10px;" width="50%">
+                            
+                               
+                            
+                                <img src={{highlight.image}} width="310" alt="" style="display:block;width:310px;max-width:100%;height:auto;" />
+                            
+                       </td>
+                    </tr>
+                </table>
+                <div class="spacer" style="line-height:24px;height:24px;mso-line-height-rule:exactly;">&nbsp;</div>
+                 {{/if}}
+                 
+                 {{#greaterThan (length statistics) 0}} 
+                
+                <div class="spacer" style="line-height:24px;height:24px;mso-line-height-rule:exactly;">&nbsp;</div>
+                
+                <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:700px;" class="block">
+                    <tr>
+                    {{#each @root.statistics }}
+                    	<td class="block" align="left" valign="top" width="33%">
+                            <p class="margin-mobile align-center-mobile" style="margin-bottom:10px;font-family:Roboto,Arial,sans-serif;font-size:42px;line-height:36px; font-weight:700; text-align:center; color:#709DC9">
+                            {{this.number}}
+                          </p>
+                          <p style="margin-top:0px; padding-top:0;font-family:Roboto,Arial,sans-serif;font-size:16px;line-height:25px; text-align:center; font-weight:700">
+                          {{this.text}}</p>
+                        </td>
+                    {{/each}}
+                         
+                    </tr> 
+                </table>
+                <div class="spacer" style="line-height:24px;height:24px;mso-line-height-rule:exactly;">&nbsp;</div>
+                {{/greaterThan}}
+                
+                
+                  <div class="spacer" style="line-height:24px;height:24px;mso-line-height-rule:exactly;">&nbsp;</div>
+                  
+                {{#each @root.blocks}}
+                
+                    {{#if this.title }} 
+                        {{#if this.topic }}
+                        <table cellpadding="0" cellspacing="0" border="0" role="presentation" height="25" style="width:100%;border:0;border-spacing:0; width:700px;" width="700" class="block">
+                        <tr valign="bottom"><td class="no-padding-left" style="padding-left:25px;font-size:20px;line-height:25px;font-family:Roboto,Arial,sans-serif"><p style="padding:0; margin:0; font-size:20px;line-height:25px;">{{this.title}}</p></td></tr>
+                        </table>
+                        <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:100%;border:0;border-spacing:0;  width:700px; padding-bottom:15px" width="700" class="block" height="35">
+                         
+                        
+                        <tr valign="center">
+                            <td nowrap class="no-padding-left" style="padding-left:25px; padding-right:20px;font-family:Roboto,Arial,sans-serif;line-height:35px; text-align:left; font-weight:400; width:1%;white-space: nowrap;">
+                              <p style="white-space: nowrap; padding:0; margin:0;font-weight:700; font-size:32px; color:#121938; line-height:35px">{{this.topic}}</p>
+                            </td>
+                            <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td height="5px" width="100%" style="background-color:#709DC9; line-height5px;mso-line-height-rule: exactly; font-size:5px;">&nbsp</td></tr></table>
+                            </td>
+                        </tr>
+                        
+                       
+                        
+                        
+                         </table>
+                         <div class="spacer" style="line-height:15px;height:15px;mso-line-height-rule:exactly;">&nbsp;</div>
+                         {{else}}
+                         <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:100%;border:0;border-spacing:0; margin-bottom:10px; width:700px" width="700" class="block">
+                         <tr>
+                            <td nowrap class="no-padding-left" style="padding-left:25px; padding-right:20px; padding-top:20px; padding-bottom:20px;font-family:Roboto,Arial,sans-serif;font-size:20px;line-height:3px; text-align:left; font-weight:400; width:1%;white-space: nowrap;">
+                              <p style="white-space: nowrap; padding:0; margin:0;font-weight:700; font-size:20px; color:#121938;">{{this.title}}</p>
+                            </td>
+                            <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td height="5px" width="100%" style="background-color:#709DC9; line-height5px;mso-line-height-rule: exactly; font-size:5px;">&nbsp</td></tr></table>
+                            </td>
+                
+                        </tr>
+                         </table>
+                        {{/if}}
+                   
+                    {{/if}}
+                    
+                    {{#if this.highlighted}}
+                    <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:700px; mso-line-height-rule: exactly; {{#if this.highlighted.background_white}}background-color: #fff; {{else}}background-color: #141A36; {{/if}}" class="block" width="700">
+                    <tr>
+                        
+                         <td class="block" align="left" valign="middle" width="50%" height="330"><img src={{this.highlighted.image}} width="350" height="auto" alt="" style="display:block;width:350px;max-width:100%;height:auto;" />
+                       </td>
+                        <td height="330" class="block no-padding-left-right padding-bottom" align="left" valign="middle" style="padding-left:40px; padding-right:25px; text-align:left;mso-line-height-rule: exactly" width="50%">
+                            
+                           <p class="padding-left-text" style="font-family:Roboto,Arial,sans-serif;font-size:20px;line-height:30px; font-weight:700; {{#if this.highlighted.background_white}} color:#0F1C50;{{else}} color:#ffffff;{{/if}}">
+                               {{this.highlighted.title}}</p>
+                              <p class="padding-left-text" style="margin:0;font-family:Roboto,Arial,sans-serif;font-size:16px;line-height:25px; {{#if this.highlighted.background_white}} color:#0F1C50;{{else}} color:#ffffff;{{/if}}">
+                               {{this.highlighted.body}}</p>
+                                <p class="padding-left-text" style="margin:0; margin-top:15px;font-family:Roboto,Arial,sans-serif"><a href="{{this.highlighted.link.url}}" style="background: #121937; text-decoration: none; padding: 13px 25px; color: #ffffff; display:inline-block; mso-padding-alt:0;text-underline-color:#ffffff; {{#if this.highlighted.background_white}}background-color:#121937; color:#fff;{{else}}background-color: #fff; color:#121937;{{/if}}"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:20pt">&nbsp;</i><![endif]--><span style="mso-text-raise:10pt;font-weight:bold; font-size:14px">{{this.highlighted.link.text}}</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a></p>
+                            
+                                
+                            
+                       </td>
+                    </tr>
+                    </table>
+    
+        
+                    <div class="spacer" style="line-height:24px;height:24px;mso-line-height-rule:exactly;">&nbsp;</div>
+                    <div class="spacer" style="line-height:24px;height:24px;mso-line-height-rule:exactly;">&nbsp;</div>
+                    {{/if}}
+                    
+                    
+                    
+                    
+                    {{#if this.twocolumns }}
+                     <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:650px;" class="block" width="650">
+                        
+                            {{#each this.twocolumns }}
+                            <tr >
+                            <td>
+                                  <table class="no-padding-left" style="width:100%;border:0;border-spacing:0;  padding-right:16px; " border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td class="block" width="30%" style="padding-right:20px; padding-bottom:15px" valign="top">
+                                                <a href="{{this.link.url}}"><img src="{{this.highlight.image}}" style="width:100%"></a>
+                                            </td>
+                                            <td class="block" width="70%" valign="top">
+                                            
+                                                <p style="margin-top:0;font-size:20px; line-height:25px;font-weight:700;font-family:Roboto,Arial,sans-serif; margin-bottom:5px">{{this.title}}</p>
+                                        
+                                                <p style="font-size:16px; line-height:25px; font-family:Roboto,Arial,sans-serif; margin-top:0; margin-bottom:0; padding-top:0">{{this.body}}</p>
+                                                
+                                                 <p style="font-size:16px; margin-top:15px; margin-bottom:0; text-transform:uppercase; font-weight:700; padding-bottom:0;font-family:Roboto,Arial,sans-serif; color:#709DC9">
+                                                   {{this.highlight.pretitle}}
+                                                 </p>
+                                                 <p style="font-size:12px; margin-top:5px; padding-top:0px; line-height:18px; font-family:Roboto,Arial,sans-serif; color:#709DC9;">
+                                                   {{this.highlight.title}}
+                                                 </p>  
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                
+                           </td>
+                           </tr>
+                           {{#unless @last}}
+                            <tr>
+                            
+                               <td style="width:100%; display: table-cell;vertical-align: middle; padding-top:15px; padding-bottom:25px">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="1px" width="100%" style="background-color:#709DC9; line-height:1px;mso-line-height-rule: exactly; font-size:1px;">&nbsp</td></tr></table>
+                                </td>
+                            </tr>
+                            {{/unless}}
+                           {{/each}}
+                        
+                        
+                    </table>
+                    <div class="spacer" style="line-height:24px;height:24px;mso-line-height-rule:exactly;">&nbsp;</div>
+                        
+                    {{/if}}
+                    
+                    {{#if this.highlighted_doc }}
+                     <div class="spacer" style="line-height:24px;height:24px;mso-line-height-rule:exactly;">&nbsp;</div>
+                     
+                     <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:700px; {{#if this.highlighted_doc.background_white}}background-color: #fff; {{else}}background-color: #141A36; {{/if}}" class="block" width="700">
+                    <tr>
+                        
+                         <td height="280" class="block no-padding-left-right small-padding-top" align="left" valign="middle" width="50%" style="padding-left:25px">
+                              <p class="padding-left-text" style="font-family:Roboto,Arial,sans-serif;font-size:28px;line-height:30px; font-weight:700; {{#if this.highlighted_doc.background_white}} color:#0F1C50;{{else}} color:#fff{{/if}}">
+                               {{this.highlighted_doc.title}}
+                              </p>
+                              <p class="padding-left-text" style="margin:0;font-family:Roboto,Arial,sans-serif;font-size:16px;line-height:25px; {{#if this.highlighted_doc.background_white}} color:#0F1C50;{{else}} color:#ffffff;{{/if}}">
+                               {{this.highlighted_doc.body}}
+                              </p>
+                              <p class="padding-left-text" style="margin:0; margin-top:15px;font-family:Roboto,Arial,sans-serif"><a href="{{this.highlighted_doc.link.url}}" style="background: #121937; text-decoration: none; padding: 13px 25px; color: #ffffff; display:inline-block; mso-padding-alt:0;text-underline-color:#ffffff; {{#if this.highlighted_doc.background_white}}background-color:#121937; color:#fff;{{else}}background-color: #fff; color:#121937;{{/if}}"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:20pt">&nbsp;</i><![endif]--><span style="mso-text-raise:10pt;font-weight:bold; font-size:14px">{{this.highlighted_doc.link.text}}</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a></p>
+                         </td>
+                         <td height="280" class="block small-padding-top" valign="middle" width="50%" align="center">
+                            <a href="{{this.highlighted_doc.link.url}}" style="text-align:center; display:block"><img src="{{this.highlighted_doc.image}}" style="max-width:100%"></a>
+                         </td>
+                        </tr>
+                    </table>
+                 
+                    <div class="spacer" style="line-height:24px;height:24px;mso-line-height-rule:exactly;">&nbsp;</div>
+                    <div class="spacer" style="line-height:24px;height:24px;mso-line-height-rule:exactly;">&nbsp;</div>
+                    
+                    {{/if}}
+                    
+                    
+                    
+                    
+                    
+                    {{#if this.default }}
+                    
+                        <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:700px;" class="block" width="650">
+                            <tr>
+                                <td align="center">
+                                 <a href="{{this.default.link.url}}"><img src="{{this.default.image}}" style="max-width:100%" /></a>
+                         <p style="font-weight:700; font-size:20px; line-height:25px; font-family:Roboto,Arial,sans-serif; margin-top:30px">{{this.default.title}}</p>
+                         <p class="no-padding-left-right" style="font-size:16px; line-height:25px; font-family:Roboto,Arial,sans-serif; padding-left:25px; padding-right:25px">{{this.default.body}}</p>
+                         <p style="margin:0;font-family:Arial,sans-serif; margin-top:15px"><a href="{{this.default.link.url}}" style="background: #121937; text-decoration: none; padding: 13px 25px; color: #ffffff; display:inline-block; mso-padding-alt:0;text-underline-color:#ffffff"><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:20pt">&nbsp;</i><![endif]--><span style="mso-text-raise:10pt;font-weight:bold; font-size:14px">{{this.default.link.text}}</span><!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]--></a></p>
+                                </td>
+                            </tr>
+                       
+                        
+                        </table>
+                        <div class="spacer" style="line-height:24px;height:24px;mso-line-height-rule:exactly;">&nbsp;</div>
+                        <div class="spacer" style="line-height:24px;height:24px;mso-line-height-rule:exactly;">&nbsp;</div>
+                    {{/if}}
+                    
+                    {{#if this.list }}
+                        {{#each this.list}}
+                            <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:650px;" class="block" width="650">
+                                    <tr>
+                                        <td align="left" valign="top" width="15%" style="padding-top:8px">
+                                           <a href="{{this.link.url}}"><img src="{{this.image}}" /></a>
+                                        </td>
+                                        <td align="left" valign="top" width="85%" style="padding-left:7px">
+                                            <p style="font-size:20px; font-weight:700; text-align:left; margin-bottom:5px; font-family:Roboto,Arial,sans-serif; margin-top:5px">{{this.title}}</p>
+                                            <p style="font-size:16px; text-align:left; margin-bottom:5px; margin-top:10px; font-family:Roboto,Arial,sans-serif">{{this.body}}</p>
+                                            <p style="text-align:left; margin-top:8px"><a href="{{this.link.url}}" style="text-align:left;font-size:14px; font-weight:700; color: #141A36;font-family:Roboto,Arial,sans-serif">{{this.link.text}}</a></p>
+                                        </td>
+                                </tr>
+                                
+                                
+                            </table>
+                            <div class="spacer" style="line-height:24px;height:24px;mso-line-height-rule:exactly;">&nbsp;</div>
+                            {{#unless @last}}
+                            
+                            <table border="0" cellpadding="0" cellspacing="0" width="650" class="block"><tr><td height="1px" width="100%" style="background-color:#709DC9; line-height:1px;mso-line-height-rule: exactly; font-size:1px;">&nbsp</td></tr></table>
+                            {{/unless}}
+                            <div class="spacer" style="line-height:24px;height:24px;mso-line-height-rule:exactly;">&nbsp;</div>                           
+                        {{/each}} 
+                        <div class="spacer" style="line-height:24px;height:24px;mso-line-height-rule:exactly;">&nbsp;</div>
+                    {{/if}}    
+                  
+                {{/each}}
+                
+              
+                
+            <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width:700px;" class="block" width="700">
+              <tr>
+                <td align="center">
+                  <table style="width:100%; text-align:center; padding-bottom:20px; padding-top:20px; border:0;border-spacing:0;">
+                    <tr>
+                       <td style="width:100%; display: table-cell;vertical-align: middle;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="3px" width="100%" style="background-color:#709DC9; line-height:3px;mso-line-height-rule: exactly; font-size:3px;">&nbsp</td></tr></table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin:0; padding:0; font-family:Roboto,Arial,sans-serif; font-size:16px">You are receiving this email because you opted in at our Insurance Newsletter by NTT DATA</p>
+                                                    <p style="margin-top:10px; margin-bottom:5px; padding:0; font-family:Roboto,Arial,sans-serif; font-size:16px">If you would like to stop receiving these emails <a style="text-align:left;font-size:14px; font-weight:700; color: #141A36;font-family:Roboto,Arial,sans-serif" href="{{unsubscribe}}">click here</a></p>
+                            <p style="margin-top:10px; margin-bottom:5px; padding:0; font-family:Roboto,Arial,sans-serif; font-size:16px">Copyright © 2022 Insurance - NTT DATA Insurance, All rights reserved.</p>
+                        </td>
+                    </tr>
+                  </table>
+        
+                    </td>
+                </tr>
+    
+            </table>
+                
+            </td>
+        </tr>
+      </table>
+    </body>
+  </html>

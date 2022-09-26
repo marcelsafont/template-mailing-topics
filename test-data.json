@@ -1,0 +1,138 @@
+{
+  "newsletter_pretitle": "Explore the latest",
+  "newsletter_title": "HOT TOPICS",
+  "highlight": {
+    "title": "Simple Processes for Smarter Customers",
+    "body": "A review on the main challenges Chief Marketing Officers and their teams are facing in the era of digital insurance and the steps they must take to become Transformation Superheros",
+    "image": "https://www.datocms-assets.com/62362/1662709821-mail-header.jpg",
+    "link": {
+      "url": "https://www.nttdata.com",
+      "text": "Discover the paper"
+    }
+  },
+  "statistics": [
+    {
+      "number": "63",
+      "text": "Lorem Ipsum Data"
+    },
+    {
+      "number": "1.325",
+      "text": "Lorem Ipsum Data"
+    },
+    {
+      "number": "35%",
+      "text": "Lorem Ipsum Data"
+    }
+  ],
+  "blocks": [
+    {
+      "title": "Featured Post",
+      "topic":"VALUE CHAIN",
+      "highlighted": {
+        "background_white": false,
+        "title": "Ping An: The Most Valuable Insurance Company in the World",
+        "body": "In 2022, Ping An has been named the World's Most Valuable Insurance Brand for the sixth year in a row by Brand Finance and has become the largest insurance company worldwide by total assets.",
+        "image": "https://www.datocms-assets.com/62362/1662723794-mail-left.jpg",
+        "link": {
+          "url": "https://www.nttdata.com",
+          "text": "Discover the Post"
+        }
+      }
+    },
+    {
+      "title": "Featured interviews",
+      "topic":"CYBERSECURITY",
+      "twocolumns": [
+        {
+          "highlight": {
+            "image": "https://www.datocms-assets.com/62362/1662999864-interviewer.jpg",
+            "pretitle": "James Birch",
+            "title": "Head of Innovation / Development Director Brit Insurance / Kit Insurance"
+          },
+          "title": "The Insurance Industry is Moving Towards a Partnership and Ecosystem Approach",
+          "body": "Insurance companies are accelerating their speed of change in order to adapt to the customers’ needs in a digital world. Insurance companies are accelerating their speed of change in order to adapt to the customers’ needs in a digital world. .",
+          "link": {
+            "url": "https://www.nttdata.com",
+            "text": "Read the interview"
+          }
+        }
+      ]
+    },
+     {
+      "title": "Featured interviews",
+      "topic":"DIGITAL TRANSFORMATION",
+      "twocolumns": [
+        {
+          "highlight": {
+            "image": "https://www.datocms-assets.com/62362/1662999864-interviewer.jpg",
+            "pretitle": "James Birch",
+            "title": "Head of Innovation / Development Director Brit Insurance / Kit Insurance"
+          },
+          "title": "The Insurance Industry is Moving Towards a Partnership and Ecosystem Approach",
+          "body": "Insurance companies are accelerating their speed of change in order to adapt to the customers’ needs in a digital world. Insurance companies are accelerating their speed of change in order to adapt to the customers’ needs in a digital world. .",
+          "link": {
+            "url": "https://www.nttdata.com",
+            "text": "Read the interview"
+          }
+        }
+      ]
+    },
+    {
+      "highlighted_doc": {
+        "background_white": false,
+        "title": "Insurers and their Digital Garages",
+        "body": "Do insurers believe in Insurtechs? Their interests and logics when investing in startups.",
+        "image": "http://cdn.mcauto-images-production.sendgrid.net/d69d9df91cceac1c/39723a16-2b26-4b60-97c7-87ee85eb6a3b/211x300.png",
+        "link": {
+          "url": "https://www.nttdata.com",
+          "text": "Download Report"
+        }
+      }
+    },
+    {
+      "title": "Featured Dialog",
+      "topic": "DIGITAL INSURANCE",
+      "default": {
+        "title": "Discover the insurance challenges",
+        "body": "A review on the main challenges Chief Marketing Officers and their teams are facing in the era of digital insurance and the steps they must take to become Transformation Superheros.",
+        "image": "https://www.datocms-assets.com/62362/1662999867-video-mail.jpg",
+        "link": {
+          "url": "https://www.nttdata.com",
+          "text": "Discover the dialog"
+        }
+      }
+    },
+    {
+      "title": "Featured Documents",
+      "list": [
+        {
+          "title": "Simple Processes for Smarter Customers",
+          "body": "A review on the main challenges Chief Marketing Officers and their teams are facing. A review on the main challenges Chief Marketing Officers and their teams are facing. A review on the main challenges Chief Marketing Officers and their teams are facing..",
+          "image": "https://www.datocms-assets.com/62362/1662972454-doc-mail.jpg",
+          "link": {
+            "url": "https://www.nttdata.com",
+            "text": "Download document 1"
+          }
+        },
+        {
+          "title": "Simple Processes for Smarter Customers",
+          "body": "A review on the main challenges Chief Marketing Officers and their teams are facing. A review on the main challenges Chief Marketing Officers and their teams are facing.",
+          "image": "https://www.datocms-assets.com/62362/1662972454-doc-mail.jpg",
+          "link": {
+            "url": "https://www.nttdata.com",
+            "text": "Download document 2"
+          }
+        },
+        {
+          "title": "Simple Processes for Smarter Customers",
+          "body": "A review on the main challenges Chief Marketing Officers and their teams are facing.",
+          "image": "https://www.datocms-assets.com/62362/1662972454-doc-mail.jpg",
+          "link": {
+            "url": "https://www.nttdata.com",
+            "text": "Download document 3"
+          }
+        }
+      ]
+    }
+  ]
+}
